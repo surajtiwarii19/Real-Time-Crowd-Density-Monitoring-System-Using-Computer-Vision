@@ -21,3 +21,19 @@ display:
   window_name: "Crowd Monitoring System"
   font_scale: 0.7
   box_thickness: 2
+
+anti_spoof:
+  history_size: 20
+  warmup_frames: 18
+  motion_threshold: 0.014
+  low_motion_threshold: 0.006
+  sharp_blur_threshold: 230.0
+  static_center_jitter: 3.5
+  static_area_jitter: 0.03
+  global_motion_pause: 0.05
+  fake_min_streak: 12
+  real_recover_streak: 3
+  match_iou_threshold: 0.15
+  match_max_center_distance: 80.0
+  max_missed_for_match: 3
+  max_missed_frames: 8
